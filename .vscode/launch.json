@@ -1,0 +1,132 @@
+{
+  // IntelliSense を使用して利用可能な属性を学べます。
+  // 既存の属性の説明をホバーして表示します。
+  // 詳細情報は次を確認してください: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "1.txt (gdb)",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${fileDirname}/a.out",
+      "args": [
+        "<",
+        "${fileDirname}/in_1.txt"
+      ],
+      "stopAtEntry": false,
+      "cwd": "${fileDirname}",
+      "environment": [],
+      "externalConsole": false,
+      "MIMode": "gdb",
+      "miDebuggerPath": "gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ],
+      "preLaunchTask": "cmake build"
+    },
+    {
+      "name": "1.txt (lldb-mi)",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${fileDirname}/a.out",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${fileDirname}",
+      "environment": [],
+      "externalConsole": false,
+      "MIMode": "lldb",
+      "miDebuggerPath": "lldb-mi",
+      "setupCommands": [
+        {
+          "description": "input",
+          "text": "settings set target.input-path ${fileDirname}/in_1.txt"
+        },
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        },
+      ],
+      "preLaunchTask": "cmake build"
+    },
+    {
+      "name": "1.txt (lldb)",
+      "type": "lldb",
+      "request": "launch",
+      "program": "${fileDirname}/a.out",
+      "args": [],
+      "cwd": "${fileDirname}",
+      "stdio": [
+        "${fileDirname}/in_1.txt",
+        null,
+        null
+      ],
+      "terminal": "integrated",
+      "preLaunchTask": "cmake build"
+    },
+    {
+      "name": "2.txt",
+      "type": "lldb",
+      "request": "launch",
+      "program": "${fileDirname}/a.out",
+      "args": [],
+      "cwd": "${fileDirname}",
+      "stdio": [
+        "${fileDirname}/in_2.txt",
+        null,
+        null
+      ],
+      "terminal": "integrated",
+      "preLaunchTask": "cmake build"
+    },
+    {
+      "name": "3.txt",
+      "type": "lldb",
+      "request": "launch",
+      "program": "${fileDirname}/a.out",
+      "args": [],
+      "cwd": "${fileDirname}",
+      "stdio": [
+        "${fileDirname}/in_3.txt",
+        null,
+        null
+      ],
+      "terminal": "integrated",
+      "preLaunchTask": "cmake build"
+    },
+    {
+      "name": "4.txt",
+      "type": "lldb",
+      "request": "launch",
+      "program": "${fileDirname}/a.out",
+      "args": [],
+      "cwd": "${fileDirname}",
+      "stdio": [
+        "${fileDirname}/in_4.txt",
+        null,
+        null
+      ],
+      "terminal": "integrated",
+      "preLaunchTask": "cmake build"
+    },
+    {
+      "name": "5.txt",
+      "type": "lldb",
+      "request": "launch",
+      "program": "${fileDirname}/a.out",
+      "args": [],
+      "cwd": "${fileDirname}",
+      "stdio": [
+        "${fileDirname}/in_5.txt",
+        null,
+        null
+      ],
+      "terminal": "integrated",
+      "preLaunchTask": "cmake build"
+    }
+  ]
+}
