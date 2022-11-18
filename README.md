@@ -2,31 +2,31 @@
 
 [AtCoder](https://atcoder.jp/) workspace template for C++ Language, powered by VSCode and [atcoder-tools](https://github.com/kyuridenamida/atcoder-tools)
 
-## 0. Register https://atcoder.jp/
+## 1. Register https://atcoder.jp/
 
-## 1. Check [AtCoder Programming Guide for beginners (APG4b)](https://atcoder.jp/contests/apg4b)
+## 2. Check [AtCoder Programming Guide for beginners (APG4b)](https://atcoder.jp/contests/apg4b)
 
-## 2. Get and start [Docker Desktop](https://www.docker.com/products/docker-desktop/)
+## 3. Get and start [Docker Desktop](https://www.docker.com/products/docker-desktop/)
 
-## 3. Clone this repository as `atcoder-workspace`
+## 4. Clone this repository as `atcoder-workspace`
 
 ```sh
-git clone https://github.com/2k0ri/atcoder-workspace-boilerplate.git atcoder-workspace
+git clone --recursive https://github.com/2k0ri/atcoder-workspace-boilerplate.git atcoder-workspace
 ```
 
-## 4. Open via VSCode
+## 5. Open via VSCode
 
 ```sh
 cd atcoder-workspace
 code .
 ```
 
-## 5. Build and reopen with devContainer
+## 6. Build and reopen with devContainer
 
 - Ctrl + Shift + P (Command + Shift + P)
 - `> Reopen in Container`
 
-## 6. Get tests with `atcoder-tools gen`
+## 7. Get tests with `atcoder-tools gen`
 - Ctrl + Shift + Alt + B (Command + Shift + Option + B)
 - `atcoder-tools gen`
 - Type `abs` and enter
@@ -34,20 +34,20 @@ code .
 - Log in with AtCoder account in console
 - Tests will be generated under `abs/` directory
 
-## 7. Build and check the test
+## 8. Build and check the test
 
 - Open `abs/PracticeA/main.cpp`
 - Ctrl + Shift + B (Command + Shift + B)
 - Results will be shown in console
 
-## 8. Debug the test
+## 9. Debug the test
 
 - Set the breakpoint in L20 `solve(a, b, c, s)`
 - Ctrl + Shift + Alt + D (Command + Shift + Option + D)
 - Choose `1.txt(lldb)`
 - Variables will be shown
 
-## 9. Submit the test
+## 10. Submit the test
 
 - Solve the `solve` method
 - Ensure `Passed all test cases!!!` is shown in check
