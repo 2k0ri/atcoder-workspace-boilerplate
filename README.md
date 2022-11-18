@@ -4,27 +4,29 @@
 
 ## 0. Register https://atcoder.jp/
 
-## 1. Get and start [Docker Desktop](https://www.docker.com/products/docker-desktop/)
+## 1. Check [AtCoder Programming Guide for beginners (APG4b)](https://atcoder.jp/contests/apg4b)
 
-## 2. Clone this repository as `atcoder-workspace`
+## 2. Get and start [Docker Desktop](https://www.docker.com/products/docker-desktop/)
+
+## 3. Clone this repository as `atcoder-workspace`
 
 ```sh
 git clone https://github.com/2k0ri/atcoder-workspace-boilerplate.git atcoder-workspace
 ```
 
-## 3. Open via VSCode
+## 4. Open via VSCode
 
 ```sh
 cd atcoder-workspace
 code .
 ```
 
-## 4. Build and reopen with devContainer
+## 5. Build and reopen with devContainer
 
 - Ctrl + Shift + P (Command + Shift + P)
 - `> Reopen in Container`
 
-## 5. Get tests with `atcoder-tools gen`
+## 6. Get tests with `atcoder-tools gen`
 - Ctrl + Shift + Alt + B (Command + Shift + Option + B)
 - `atcoder-tools gen`
 - Type `abs` and enter
@@ -32,20 +34,20 @@ code .
 - Log in with AtCoder account in console
 - Tests will be generated under `abs/` directory
 
-## 6. Build and check the test
+## 7. Build and check the test
 
 - Open `abs/PracticeA/main.cpp`
 - Ctrl + Shift + B (Command + Shift + B)
 - Results will be shown in console
 
-## 7. Debug the test
+## 8. Debug the test
 
 - Set the breakpoint in L20 `solve(a, b, c, s)`
 - Ctrl + Shift + Alt + D (Command + Shift + Option + D)
 - Choose `1.txt(lldb)`
 - Variables will be shown
 
-## 8. Submit the test
+## 9. Submit the test
 
 - Solve the `solve` method
 - Ensure `Passed all test cases!!!` is shown in check
