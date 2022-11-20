@@ -125,5 +125,10 @@
       "engineLogging": true,
       "traceResponse": true
     }
+  },
+  "cmake.defaultVariants": {
+    "buildType": {
+      "default": "debug"
+    }
   }
 }
